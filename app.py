@@ -5,8 +5,8 @@ import torch
 # Load model and tokenizer
 @st.cache_resource
 def load_model():
-    tokenizer = AutoTokenizer.from_pretrained("vdsathvikreddy/sst5-distilbert")
-    model = AutoModelForSequenceClassification.from_pretrained("vdsathvikreddy/sst5-distilbert")
+    tokenizer = AutoTokenizer.from_pretrained("vdsr/sst5-distilbert")
+    model = AutoModelForSequenceClassification.from_pretrained("vdsr/sst5-distilbert")
     return tokenizer, model
 
 tokenizer, model = load_model()
